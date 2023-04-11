@@ -12,6 +12,7 @@ class Homepage extends StatelessWidget {
         title: Text("Catalog App"),
       ),
       body: Center(
+        // ignore: avoid_unnecessary_containers
         child: Container(
           child: Text("Welcome to $days of Flutter by $name"),
         ),

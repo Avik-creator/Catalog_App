@@ -1,8 +1,10 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, unused_local_variable
 
 import 'package:flutter/material.dart';
+import 'package:flutter_catalog/models/catalog.dart';
 
 import '../widgets/drawer.dart';
+import '../widgets/itemswidget.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -15,11 +17,13 @@ class Homepage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Catalog App"),
       ),
-      body: Center(
-        // ignore: avoid_unnecessary_containers
-        child: Container(
-          child: Text("Welcome to $days of Flutter by $name"),
-        ),
+      body: ListView.builder(
+        itemCount: CatalogModel.items.length,
+        itemBuilder: (context, index) {
+          return ItemWidget(
+            item: CatalogModel.items[index],
+          );
+        },
       ),
       drawer: MyDrawer(),
     );

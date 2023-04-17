@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, duplicate_ignore
+// ignore_for_file: prefer_const_constructors, duplicate_ignore, use_full_hex_values_for_flutter_colors
 
 import 'package:flutter/material.dart';
 

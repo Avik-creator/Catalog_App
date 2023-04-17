@@ -2,8 +2,8 @@
     "products": [
         {
             "id": 1,
-            "name": "iPhone 12 Pro",
-            "desc": "Apple iPhone 12th generation",
+            "name": "iPhone 14 Pro",
+            "desc": "Apple iPhone 14th generation",
             "price": 999,
             "color": "#33505a",
             "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-pro-model-unselect-gallery-2-202209_GEO_EMEA?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1660753617539"

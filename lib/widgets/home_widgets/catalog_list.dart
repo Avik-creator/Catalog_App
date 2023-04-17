@@ -1,3 +1,5 @@
+// ignore_for_file: depend_on_referenced_packages, prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:flutter_catalog/pages/home_detail.dart';
 import 'package:velocity_x/velocity_x.dart';
@@ -35,9 +37,8 @@ class CatalogItem extends StatelessWidget {
         child: Row(
       children: [
         Hero(
-          tag: Key(catalog.id.toString()),
-
-          child: CatalogImage(catalog.image)),
+            tag: Key(catalog.id.toString()),
+            child: CatalogImage(catalog.image)),
         Expanded(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -57,7 +58,7 @@ class CatalogItem extends StatelessWidget {
                           backgroundColor:
                               MaterialStateProperty.all(Colors.black),
                           shape: MaterialStateProperty.all(StadiumBorder())),
-                      child: "Buy".text.color(Vx.white).make())
+                      child: "Add to Cart".text.color(Vx.white).make())
                 ],
               )
             ],

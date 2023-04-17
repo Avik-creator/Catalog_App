@@ -1,8 +1,10 @@
 // ignore_for_file: prefer_const_constructors, unused_local_variable, annotate_overrides, unnecessary_null_comparison, depend_on_referenced_packages, unused_import
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_catalog/models/catalog.dart';
+import 'package:flutter_catalog/utils/routes.dart';
 import 'package:flutter_catalog/widgets/themes.dart';
 import 'dart:convert';
 import '../widgets/drawer.dart';
@@ -38,6 +40,11 @@ class _HomepageState extends State<Homepage> {
 
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: MyTheme.creamcolor,
+      floatingActionButton: FloatingActionButton(
+          onPressed: () => Navigator.pushNamed(context, MyRoutes.cartRoute),
+          backgroundColor: MyTheme.darkbluishColor,
+          child: Icon(CupertinoIcons.cart)),
       body: SafeArea(
           child: Container(
         padding: Vx.m32,

@@ -7,8 +7,7 @@ class CartModel {
   CartModel._internal();
 
   factory CartModel() => cartModel;
-
-  // Catalog Field
+  
   late CatalogModel _catalog;
 
   final List<int> _itemIDs = [];

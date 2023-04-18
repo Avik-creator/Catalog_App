@@ -34,6 +34,6 @@ class MyTheme {
 
   static Color creamcolor = Color(0xfff5f5f5);
   static Color darkcreamcolor = Color(0xff0b0b0);
-  static Color darkbluishColor = Color(0xfff403b58);
+  static Color darkbluishColor = Color(0xfff403b59);
   static Color lightbluishColor = Vx.blue700;
 }
